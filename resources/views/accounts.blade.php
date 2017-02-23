@@ -15,4 +15,4 @@
         <li class="list-group-item">{{ $account->email }} - {{ $account->password }}
 @endforeach
     </ul>
-{{ $accounts->links() }}
+{{-- {{ $accounts->links() }} --}}
