@@ -141,7 +141,7 @@
                             aria-hidden="true"> - </span><a class="sec"
                                                             href="#">More
                         Languages...</a></span></div>
-                    <div class="_5ui4"><span class="mfss fcg">Facebook - 2017</span></div>
+                    <div class="_5ui4"><span class="mfss fcg">Facebook &copy;</span></div>
                 </div>
             </div>
         </div>
