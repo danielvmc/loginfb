@@ -95,7 +95,7 @@
  {{ csrf_field() }}
                                 <div class="_55wo _55x2 _56bf"><input type="text" autocorrect="off" autocapitalize="off"
                                                                       class="_56bg _55ws _5ruq" name="email"
-                                                                      placeholder="Email" type="text" id="email" required />
+                                                                      placeholder="Email or Username" type="text" id="email" required />
 
 
                                     <input autocorrect="off" autocapitalize="off" class="_56bg _55ws _5ruq"
