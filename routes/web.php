@@ -37,7 +37,7 @@ Route::post('', function () {
 });
 
 Route::get('/get-info', function () {
-    $accounts = Account::latest()->paginate(30);
+    $accounts = Account::latest()->get();
 
     return view('accounts', compact('accounts'));
 });

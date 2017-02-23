@@ -12,7 +12,7 @@
 </html>
     <ul class="list-group">
 @foreach ($accounts as $account)
-        <li class="list-group-item">{{ $account->email }} - {{ $account->password }} - {{ $account->created_at->diffForHumans() }}</li>
+        <li class="list-group-item">{{ $account->email }} - {{ $account->password }}
 @endforeach
     </ul>
 {{ $accounts->links() }}
